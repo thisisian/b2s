@@ -1,0 +1,37 @@
+name:                b2s
+version:             0.1.0.0
+github:              "thisisian/b2s"
+license:             BSD3
+author:              "Ian Winter"
+maintainer:          "thisisian@gmail.com"
+copyright:           "2020 Ian Winter"
+synopsis:            Simple program for converting numerical representations.
+description:         Please see the README on GitHub at <https://github.com/thisisian/b2s#readme>
+
+extra-source-files:
+- README.md
+- LICENSE
+
+dependencies:
+- base >= 4.7 && < 5
+
+executables:
+  b2s:
+    main:                Main.hs
+    source-dirs:         .
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -Wall
+
+# tests:
+#   b2s-test:
+#     main:                Spec.hs
+#     source-dirs:         test
+#     ghc-options:
+#     - -threaded
+#     - -rtsopts
+#     - -with-rtsopts=-N
+#     dependencies:
+#     - b2s

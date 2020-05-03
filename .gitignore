@@ -1,0 +1,4 @@
+.stack-work/
+*.lock
+b2s.cabal
+*~
